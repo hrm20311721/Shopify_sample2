@@ -307,10 +307,11 @@
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+          {% render 'icon-account' %}
           {%- if customer -%}
-            {{ customer.name }}
+            {{ customer.name }} さま
           {%- else -%}
-            {% render 'icon-account' %}
+            ログイン
           {%- endif -%}
           <span class="visually-hidden">
             {%- liquid
@@ -322,6 +323,15 @@
             -%}
           </span>
         </a>
+        <style>
+          .header__icon--account{
+            width: max-content;
+            font-size: 1.2rem;
+          }
+          .header__icon--account svg{
+            margin-right: 5px;
+          }
+        </style>
       {%- endif -%}
 
       {%- for block in section.blocks -%}
