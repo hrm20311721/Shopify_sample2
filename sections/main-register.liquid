@@ -135,12 +135,41 @@
         {{ form.errors.messages.password }}.
       </span>
     {%- endif -%}
+    <div class="block">
+      <input
+        type="checkbox"
+        name="customer[note][accept_policy]"
+        id="RegisterForm-acceptPolicy"
+        required
+        aria-required="true"
+        onclick="checkbox()"
+      >
+      <label for="RegisterForm-acceptPolicy">
+        <a href="{{ shop.privacy_policy }}">プライバシーポリシー</a>に同意します。
+      </label>
+    </div>
+    <input
+      type="hidden"
+      name="customer[tags]"
+      id="RegisterForm-tags"
+      value="新規"
+    >
     <button>
       {{ 'customer.register.submit' | t }}
     </button>
   {%- endform -%}
 </div>
-
+<script>
+  function checkbox() {
+    const chk = document.getElementById("RegisterForm-acceptPolicy");
+    const button = document.getElementById("register_button");
+    if(!chk.checked) {
+       button.setAttribute("disabled","");
+    } else {
+      button.removeAttribute("disabled");
+    }
+  }
+</script>
 {% schema %}
 {
   "name": "t:sections.main-register.name",
