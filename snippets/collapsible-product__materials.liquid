@@ -11,7 +11,7 @@
     product: product
   %}
 {% endcomment %}
-<div class="product__accordion accordion" {{ block.shopify_attributes }}>
+<div class="product__accordion accordion product__materials" {{ block.shopify_attributes }}>
   <details id="Details-{{ block.shopify_attributes }}">
     <summary>
       <div class="summary__title">
@@ -29,3 +29,8 @@
     {% endfor %}
   </details>
 </div>
+<style>
+  .accordion.product__materials {
+    margin-top:0;
+  }
+</style>
