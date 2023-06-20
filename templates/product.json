@@ -20,13 +20,6 @@
           "settings": {
           }
         },
-        "7896a54b-d56f-4599-834b-a9100578d6c6": {
-          "type": "text",
-          "settings": {
-            "text": "原産国：{{ product.metafields.Item.madeIn.value }}",
-            "text_style": "body"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -61,7 +54,6 @@
         "vendor",
         "title",
         "price",
-        "7896a54b-d56f-4599-834b-a9100578d6c6",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
