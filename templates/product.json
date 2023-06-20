@@ -38,16 +38,16 @@
             "show_gift_card_recipient": false
           }
         },
-        "30f23f3e-db8d-4271-bdda-4e62e4ea33ba": {
-          "type": "product__materials",
-          "settings": {
-          }
-        },
         "63bf8d2f-6f0b-437e-a002-23f86211fe03": {
           "type": "text-with-heading",
           "settings": {
             "heading": "原産国",
             "text": "{{ product.metafields.Item.madeIn.value }}"
+          }
+        },
+        "30f23f3e-db8d-4271-bdda-4e62e4ea33ba": {
+          "type": "product__materials",
+          "settings": {
           }
         },
         "share": {
@@ -69,8 +69,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "30f23f3e-db8d-4271-bdda-4e62e4ea33ba",
         "63bf8d2f-6f0b-437e-a002-23f86211fe03",
+        "30f23f3e-db8d-4271-bdda-4e62e4ea33ba",
         "share",
         "description"
       ],
