@@ -20,6 +20,12 @@
           "settings": {
           }
         },
+        "eabe6d5e-c09b-4ade-b721-98d3b331db5a": {
+          "type": "product__metafield",
+          "settings": {
+            "text": "{{ product.metafields.Item.madeIn.value }}"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -54,6 +60,7 @@
         "vendor",
         "title",
         "price",
+        "eabe6d5e-c09b-4ade-b721-98d3b331db5a",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
