@@ -434,9 +434,10 @@
               %}
             {%- when 'product__metafield' -%}
               <div class="metafield">
-                <label>
-                  {{ product.metafields.Item.madeIn }}
+                <label class="form__label">
+                  {{ product.metafields.Item.madeIn.type }}
                 </label>
+                <p>{{ block.settings.text }}</p>
               </div>
           {%- endcase -%}
         {%- endfor -%}
