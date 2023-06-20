@@ -27,7 +27,7 @@
         {{ material }}
         {{ material.value }}
       </div>
-      <script>console.log({{material}})</script>
+      <script>console.log({{ material | json }})</script>
     {% endfor %}
   </details>
 </div>
