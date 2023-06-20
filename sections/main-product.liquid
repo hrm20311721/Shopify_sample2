@@ -432,10 +432,10 @@
               {% render 'icon-with-text',
                 block: block
               %}
-            {%- when 'product__metafield' -%}
-              <div class="metafield">
+            {%- when 'product__madeIn' -%}
+              <div class="product__madeIn">
                 <label class="form__label">
-                  {{ product.metafields.Item.madeIn.type }}
+                  原産国
                 </label>
                 <p>{{ block.settings.text }}</p>
               </div>
@@ -1907,13 +1907,13 @@
       ]
     },
     {
-      "type": "product__metafield",
-      "name": "商品メタフィールド",
+      "type": "product__madeIn",
+      "name": "商品の原産国",
       "settings": [
         {
           "type": "text",
           "id": "text",
-          "label": "テキスト"
+          "label": "原産国"
         }
       ]
     }
