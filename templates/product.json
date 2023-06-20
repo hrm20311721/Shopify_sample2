@@ -55,13 +55,9 @@
             "share_label": "Share"
           }
         },
-        "143a6136-bb1d-402a-8e0c-2dc2c08c745e": {
-          "type": "collapsible_tab",
+        "30f23f3e-db8d-4271-bdda-4e62e4ea33ba": {
+          "type": "product__materials",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
           }
         }
       },
@@ -75,7 +71,7 @@
         "buy_buttons",
         "description",
         "share",
-        "143a6136-bb1d-402a-8e0c-2dc2c08c745e"
+        "30f23f3e-db8d-4271-bdda-4e62e4ea33ba"
       ],
       "settings": {
         "enable_sticky_info": true,
