@@ -435,10 +435,20 @@
             {%- when 'product__madeIn' -%}
               <div class="product__madeIn">
                 <label class="form__label">
-                  原産国
+                  原産国 {{ block.settings.text }}
                 </label>
-                <p>{{ block.settings.text }}</p>
+                <p></p>
               </div>
+              <style>
+                .product__madeIn {
+                  border-top: 0.1rem solid rgba(var(--color-foreground),.08);
+                  border-bottom: 0.1rem solid rgba(var(--color-foreground),.08);
+                }
+
+                .product__madeIn p{
+                  margin: 0;
+                }
+              </style>
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
