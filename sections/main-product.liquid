@@ -449,6 +449,8 @@
                   margin: 0;
                 }
               </style>
+            {%- when 'collapsible-product__materials'-%}
+              {% render 'collapsible-product__materials', product:product, block:block %}
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -1925,6 +1927,13 @@
           "id": "text",
           "label": "原産国"
         }
+      ]
+    },
+    {
+      "type": "collapsible-product__materials",
+      "name": "原材料リスト",
+      "settings": [
+
       ]
     }
   ],
