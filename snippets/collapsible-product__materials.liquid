@@ -24,7 +24,7 @@
     </summary>
     {% for material in product.metafields.custom.materials.value %}
       <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-        {{ material.value }}
+        {{ material }}
         {{ material.value }}
       </div>
     {% endfor %}
