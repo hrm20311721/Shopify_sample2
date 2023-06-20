@@ -432,20 +432,20 @@
               {% render 'icon-with-text',
                 block: block
               %}
-            {%- when 'product__madeIn' -%}
-              <div class="product__madeIn">
+            {%- when 'text-with-heading' -%}
+              <div class="text-with-heading">
                 <label class="form__label">
-                  原産国
+                  {{ block.settings.heading }}
                 </label>
                 <p>{{ block.settings.text }}</p>
               </div>
               <style>
-                .product__madeIn {
+                .text-with-heading {
                   border-top: 0.1rem solid rgba(var(--color-foreground),.08);
                   border-bottom: 0.1rem solid rgba(var(--color-foreground),.08);
                 }
 
-                .product__madeIn p{
+                .text-with-heading p{
                   margin: 0;
                 }
               </style>
@@ -1919,13 +1919,18 @@
       ]
     },
     {
-      "type": "product__madeIn",
-      "name": "商品の原産国",
+      "type": "text-with-heading",
+      "name": "見出し付きテキスト",
       "settings": [
+        {
+          "type":"text",
+          "id":"heading",
+          "label":"見出し"
+        },
         {
           "type": "text",
           "id": "text",
-          "label": "原産国"
+          "label": "テキスト"
         }
       ]
     },
