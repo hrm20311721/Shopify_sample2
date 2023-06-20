@@ -432,6 +432,12 @@
               {% render 'icon-with-text',
                 block: block
               %}
+            {%- when 'product__metafield' -%}
+              <div class="metafield">
+                <label>
+                  {{ product.metafields.Item.madeIn }}
+                </label>
+              </div>
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -1896,6 +1902,17 @@
           "default": "Heading",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "metafield",
+      "name": "商品メタフィールド",
+      "settings": [
+        {
+          "type": "text",
+          "id": "テキスト",
+          "label": "テキスト"
         }
       ]
     }
