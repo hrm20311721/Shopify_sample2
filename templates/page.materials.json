@@ -1,14 +1,11 @@
 {
-  "name": "materials",
   "sections": {
-    "material-grid": {
-      "type": "material-grid",
+    "63469d82-cacc-43e2-a1a2-a0815499c5c9": {
+      "type": "page",
       "settings": {
-        "materials_per_page": 16,
-        "columns_desktop": 4,
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "columns_mobile": "2",
+        "page": "原料一覧",
+        "heading_size": "h1",
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -20,7 +17,23 @@
         "show_collection_image": false,
         "color_scheme": "background-1"
       }
+    },
+    "material-grid": {
+      "type": "material-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
-  "order": ["banner","material-grid"]
+  "order": [
+    "63469d82-cacc-43e2-a1a2-a0815499c5c9",
+    "banner",
+    "material-grid"
+  ]
 }
