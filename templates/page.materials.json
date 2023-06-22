@@ -3,7 +3,7 @@
     "main": {
       "type": "page",
       "settings": {
-        "page": "原料一覧",
+        "page": "material_list",
         "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 36,
