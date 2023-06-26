@@ -45,7 +45,7 @@
         </div>
         <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           <div class="grid__item">
-            {%- for article in section.settings.blog.articles limit:section.settings.post_limit -%}
+            {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
               <div class="accordion">
                 <a href="{{ article.url }}">
                   {% render 'icon-accordion', icon: section.settings.icon %}
@@ -57,6 +57,9 @@
             {%- endfor -%}
           </div>
         </div>
+        <a href="{{ section.settings.blog.url }}">
+          <p class="inline-richtext h4 right">{{ section.settings.blog.title }}</p>
+        </a>
       </div>
     </div>
   </div>
@@ -358,6 +361,6 @@
         "blog": "News"
       }
     }
-  ] 
+  ]
 }
 {% endschema %}
