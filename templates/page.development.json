@@ -10,7 +10,7 @@
     "columns": {
       "type": "featured-blog",
       "settings": {
-        "heading": "開発ストーリー",
+        "heading": "",
         "heading_size": "h2",
         "blog": "開発ストーリー",
         "post_limit": 3,
