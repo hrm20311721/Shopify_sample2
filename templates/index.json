@@ -22,22 +22,22 @@
         "template--19480875073825__202c715b-e451-4157-b857-80d75ffc9163-1687443335c6cc869b-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "heading": "品質へのこだわり",
+            "heading_size": "h2"
           }
         },
         "template--19480875073825__202c715b-e451-4157-b857-80d75ffc9163-1687443335c6cc869b-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "",
             "text_style": "body"
           }
         },
         "template--19480875073825__202c715b-e451-4157-b857-80d75ffc9163-1687443335c6cc869b-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "もっと詳しく",
+            "button_link": "shopify:\/\/pages\/quality_control"
           }
         }
       },
@@ -47,6 +47,7 @@
         "template--19480875073825__202c715b-e451-4157-b857-80d75ffc9163-1687443335c6cc869b-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/2.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -91,6 +92,7 @@
         "template--19480875073825__78f8e47d-3efa-4bb3-9679-23dcff766ae5-1687443335c6cc869b-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/f76b8af698d4ec5daa00dc94aa3cfc6e.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
