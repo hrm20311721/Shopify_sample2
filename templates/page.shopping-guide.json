@@ -29,7 +29,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/4E04A43B-D26D-4789-949E-E53718420C94.png",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "large",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
